@@ -1,0 +1,49 @@
+
+@import url(../lib/bs4/css/bootstrap.min.css);
+body.rtl{
+    direction: rtl;
+}
+h1 {
+    background-color: #ceebce;
+    padding: 0   0 10px 0 ;
+    margin: 0   0 10px 0 ;
+  
+}
+
+table{
+    padding: 5px;
+}
+
+body.rtl table, body.rtl .modal-body, body.rtl modal-content{
+    text-align: right;
+    direction: rtl;
+}
+
+body.rtl td , body.rtl th{
+    text-align: right;
+}
+
+body.rtl button.close{
+    position: absolute;
+    right: 93%;
+}
+
+
+
+
+
+
+.btn-add-new{
+    margin: 5px;
+}
+
+.modal-center{
+width: 160px;
+  margin: 30px auto;
+}
+.modal-footer > button{
+    position: relative;
+    left:40px;
+}
+
+

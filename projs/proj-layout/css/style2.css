@@ -1,0 +1,74 @@
+table{
+    border-spacing: 0px 10px;
+    border-color: white;
+    border-collapse: collapse;
+    padding: 10px;
+    border-collapse: separate;
+}
+
+.table-header{
+background-color: aqua;
+}
+
+.table-header>td {
+    background-color: aqua;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+}
+
+td {
+    background-color: white;
+    border: 1px solid aqua;
+    border-right: none;
+    border-left: none;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+}
+
+.left-td{
+    border-left:  1px solid aqua;
+}
+
+.right-td{
+    border-right:  1px solid aqua;
+}
+
+.vl {
+    border-left: 1px solid aqua;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+td>div{
+    position: relative;
+    top: 26px;
+    float: left;
+}
+
+img{
+    max-width: 100px;
+    float: left;
+}
+
+button{
+    border-radius: 50%;
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 2px #0000008e;
+    border-color: aqua;
+}
+
+button:focus{
+    outline: none;
+}

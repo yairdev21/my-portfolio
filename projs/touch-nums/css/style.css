@@ -1,0 +1,135 @@
+
+body{ 
+    margin: 0px;
+    background-image: url("../img/background.jpg");
+    height: 100%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.header{
+    font-size: 45px;
+    font-family: inherit;
+    background-color: rgb(39, 85, 2);
+    color: white;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.description{
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+.level-box{
+    width: 500px;
+    margin: 0 auto;
+    background-color:  #0f521a;
+    }
+.level-header{
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+.buttons{
+    border: 2px solid black;
+}
+.buttons li{
+display: inline-block;
+}
+
+.buttons li button{
+font-family: cursive;
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding  : 5px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+border: white solid 1px;
+transition-duration: 0.4s;
+}
+
+.buttons li button:hover{
+    background-color: #0f521a;
+    color: white;
+    border: white solid 1px;
+    cursor: pointer;
+    
+}
+
+
+.data-div{
+    margin-left:30%;
+}
+.data-ul li{
+    display: inline-block;
+}
+
+.time{
+    font-size: 25px;
+    color: #FFFFFF;
+    background: #0f521a;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;  
+    box-sizing: border-box;
+    width: 140px;
+    margin-left: 100px;
+    padding: 5px;
+   border: black solid 1px;
+   border-radius: 30%;
+
+}
+.number{
+    border-radius: 30%;
+    padding: 10px;
+    font-size: 25px;
+    color: #FFFFFF;
+    background:#0f521a;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;  
+   
+}
+button{
+    margin: 10px;
+}
+ 
+table{
+    margin: 0 auto  ;
+}
+   
+
+.cell {
+   background-color: rgba(0, 255, 115, 0.644);
+   font-family: monospace;
+   font-size: 25px; 
+   color: #FFFFFF;
+   background: #232323;
+   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: .5s;
+    
+}
+
+.cell:hover {
+    background-color: rgb(24, 121, 90);
+    cursor: default;
+}
+
+.right-click {
+   text-shadow: none;
+}
+.right-click:hover {
+    background-color: #232323;
+    cursor: default;
+ }
+
+.next-number{
+  
+}

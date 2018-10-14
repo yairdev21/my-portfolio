@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1 class="text-center" data-trans="header">Book Shop</h1>
+    <select onchange="onSetLang(this.value)">
+        <option value="en">English</option>
+        <option value="he">Hebrew</option>
+
+    </select>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col" data-trans="id">Id</th>
+                <th scope="col" data-trans="title">Title</th>
+                <th scope="col" data-trans="price">Price</th>
+                <th scope="col" data-trans="rate">Rate</th>
+                <th scope="col" data-trans="actions">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="books-table">
+        </tbody>
+    </table>
+
+    <button type="button" class="btn btn-primary btn-add-new" data-toggle="modal" data-target="#add-modal" data-trans="add">Add
+        New</button>
+    <br>
+
+    <!-- Paging ul -->
+    <br>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#" data-trans="prev">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#" data-trans="next">Next</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- onRead Modal -->
+    <div class="modal fade" id="book-details-modal" tabindex="-1" role="dialog" aria-labelledby="book-details-modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="book-details-modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-center modal-rate">
+                    <div class="modal-body">
+                        <p class="modal-img">
+                        </p>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <span data-trans="rate">Rate</span> : &nbsp
+                            <button type="button" class="btn btn-default btn-number" onclick="onRateBtnMinus()">
+                                <span class="glyphicon glyphicon-minus">-</span>
+                            </button>
+                        </span>
+                        <input type="text" name="quant[0]" class="form-control input-rate" value="" min="0" max="10">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" onclick="onRateBtnPlus()">
+                                <span class="glyphicon glyphicon-plus">+</span>
+                            </button>
+                        </span>
+                    </div>
+                    <p></p>
+                    <div class="modal-footer books-details-modal-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- onUpdate Modal -->
+    <div class="modal fade" id="update-modal" tabindex="-1" role="dialog" aria-labelledby="update-modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="update-modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-center modal-rate">
+                    <div class="modal-body">
+                        <p class="modal-inside">
+                        </p>
+                            <span class=" h5 font-weight-bold" data-trans="updatePrice"></span>
+                            <input type="text" name="quant[0]" class="form-control input-price" value="">
+                      
+                    </div>
+                    <div class="modal-footer update-details-modal-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- onAdd Modal -->
+    <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="add-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="add-modal-title" data-trans="addNew">Add New Book</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-center modal-rate">
+                    <div class="modal-body">
+                        <div>
+                            <span class="h4" data-trans="title">
+                                Title: &nbsp
+                            </span>
+
+                            <input type="text" name="quant[0]" class=" input-add-title" placeholder="Book Name">
+                            <p></p>
+                            <span class="h4" data-trans="price">
+                                Price: &nbsp
+                            </span>
+
+                            <input type="text" name="quant[0]" class=" input-add-price" placeholder="'Numbers only'">
+                            <p></p>
+                            <span class="h4" data-trans="imgUrl">
+                                Img Url: &nbsp
+                            </span>
+                            <input type="text" name="quant[0]" class=" input-add-img-url" placeholder="http://...">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer add-details-modal-button">
+                        <button type="button" class="btn btn-primary" onclick="readAndAddNewBook()" data-dismiss="modal"
+                            data-trans="saveAndClose">Save
+                            and close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bs4/js/bootstrap.min.js"></script>
+    <script src="lib/bs4/css/bootstrap.min.css"></script>
+
+
+
+
+
+
+    <script src="js/util-service.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/book-shop-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

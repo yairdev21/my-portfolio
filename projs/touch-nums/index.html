@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>touch-nums</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <body onload="initGame()">
+        <div class="header">TOUCH NUMBERS</div>
+        <div class="description">Click the numbers in a sequence the fastest you can!!</div>
+        <div class="level-box">
+
+            <ul class="buttons">
+                <li class="level-header">Choose Your Level:</li>
+                <li><button onclick="LevelClicked(this)"> Easy </button></li>
+                <li> <button onclick="LevelClicked(this)"> Medium </button></li>
+                <li> <button onclick="LevelClicked(this)"> Hard </button></li>
+            </ul>
+        </div>
+        <div class = "data-div">
+            <ul class="data-ul">
+                <li class="next-number"><span class = "number"> 1 </span></li>
+                <li class="time">Time:</li>
+            </ul>
+        </div>
+        <hr>
+        <table border="1" cellpadding="10">
+            <tbody class="board">
+
+            </tbody>
+        </table>
+        <tbody class="board"></tbody>
+        </table>
+
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

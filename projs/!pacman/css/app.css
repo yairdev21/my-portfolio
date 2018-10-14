@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+}
+
+/* .ghost{
+  color: gr;
+  } */
+
+.game-over-modal{
+  position: fixed;
+  display: none;
+  font-size: 30px;
+  color: black;
+  margin-left: 15%;
+  top: 30%;
+  margin-right: 30%;
+  text-align: center;
+  background-color: wheat;
+  border: 10px solid red;
+  padding: 10px;
+
+}
+
+.victorious-modal{
+  position: fixed;
+  display: none;
+  font-size: 30px;
+  color: black;
+  margin-left: 15%;
+  top: 30%;
+  margin-right: 30%;
+  text-align: center;
+  background-color: wheat;
+  border: 10px solid blue;
+  padding: 10px;
+}

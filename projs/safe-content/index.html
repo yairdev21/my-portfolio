@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Safe content</title>
+</head>
+
+<body onload="init()">
+    <div class="modal">
+        <div class="login-form-container">
+            Enter username and password
+            <div>
+                <input id="name-input" type="text" placeholder="Username">
+            </div>
+            <div>
+                <input id="password-input" type="text" placeholder="Password">
+            </div>
+            <button id="login-btn" onclick="onIsLogin()">Login!</button>
+        </div>
+    </div>
+
+    <main>
+        <button class="logout-btn" onclick="onIsLogout()">Logout</button>
+        <h2></h2>
+        <h1>The Secret content</h1>
+        <div class="admin-link">
+            
+        </div>
+    </main>
+</body>
+
+<script src="js/main.js"></script>
+<script src="js/safe-content-service.js"></script>
+<script src="js/util-service.js"></script>
+
+</html>

@@ -1,0 +1,97 @@
+body{ 
+    
+    background-image: url("../img/background.jpg");
+    
+}
+
+h1{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.level-btns{
+    width: 500px;
+    margin: 0 auto;
+    font-family: cursive;
+    padding: 2px;
+    padding-left: 20px;
+}
+
+.futures-div{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.best-time{
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.marked-counter{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30%;
+    padding: 10px;
+    font-family: cursive
+}
+
+.smiley{
+    font-size: 20px;
+}
+.timer{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30%;
+    padding: 10px;
+    font-family: cursive
+}
+
+.board-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.game-board{
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+td.cell{
+    border: 1px solid gray
+}
+.cell {
+    width:30px; height:30px;
+    background-color: gainsboro;
+    text-align: center;
+    box-shadow: inset 3px 3px 10px white
+}
+
+.cell:hover {
+    cursor: default;
+}
+
+.cell-reveled{
+    width:30px; height:30px;
+    background-color: white;
+    text-align: center;
+}
+
+td.cell-reveled{
+    border: 1px solid gray
+}
+
+.cell-reveled:hover {
+    cursor: default
+}
+
+/* cell-marked{
+} */
+
+/* .cell-marked:hover {
+    background-color: gray; 
+    text-align: center;
+    cursor: default
+} */
+
+

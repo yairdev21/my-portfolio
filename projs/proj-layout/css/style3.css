@@ -1,0 +1,45 @@
+li{
+    margin:0 auto ;
+    display: inline;
+}
+
+
+div{
+    column-count: 4;
+    border: 10px solid rgb(32, 51, 114);
+    margin: 20px;
+    padding: 30px;   
+    background-color: antiquewhite;
+    box-shadow: inset 0px 0px 51px 9px rgba(0,0,0,0.75);
+    animation: rotation 5s ;
+    max-width: 5px;
+    max-height: 3px;
+    font-size:0.001px;
+    transition: 5s ease;
+    margin: 100px auto;
+    
+}
+
+#open:target{
+    border: 40px solid rgb(32, 51, 114);
+    border-left: 50px solid rgb(32, 51, 114);;
+    border-right: 50px solid rgb(32, 51, 114);;
+    max-width: 10000px;
+    max-height: 10000px;
+    font-size:16px;
+    transform: rotate(360deg);  
+}
+
+
+#close:target{
+    max-width: 5px;
+    max-height: 3px;
+    font-size:0.001px;
+}
+
+@keyframes rotation{
+    0%{ 
+    }
+    100%{
+}
+

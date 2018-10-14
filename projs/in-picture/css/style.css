@@ -1,0 +1,77 @@
+body{ 
+    background-image: url("../img/background.jpg");
+   
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 5px solid black;
+    padding: 20px;
+    font-weight: 700;
+    font-family: fantasy;
+}
+
+h2 {
+    text-align: center;
+}
+.picture{
+    text-align: center;
+}
+.picture img{
+    max-height: 250px;
+}
+
+.sentence {
+    text-align: center;
+    background-color: rgb(165, 224, 170);
+    border: 3px solid black;
+    border-radius:  40%;
+    margin-left: 5%; 
+    margin-right: 5%; 
+    padding: 2%;
+    font-size: 25px;
+}
+
+.sentence:hover {
+    color: blueviolet;
+    cursor: pointer; 
+}
+
+.modal-right {
+    background-color: lightseagreen;
+    border: 3px solid black;
+    border-radius:  40%;
+    font-size: 50px;
+    display:none;
+    position: absolute;
+    text-align: center;
+    margin-left: 30%;
+    padding: 5px;
+    width: 300px;}
+
+.modal-wrong {
+    background-color: lightseagreen;
+    border: 3px solid black;
+    border-radius:  40%;
+    font-size: 50px;
+    display:none;
+    position: absolute;
+    text-align: center;
+    margin-left: 30%;
+    padding: 5px;
+    width: 300px;}
+
+
+.modal-win {
+    background-color: lightseagreen;
+    border: 3px solid black;
+    border-radius:  40%;
+    font-size: 50px;
+    display:none;
+    position: absolute;
+    text-align: center;
+    margin-left: 30%;
+    padding: 5px;
+    width: 300px;}
