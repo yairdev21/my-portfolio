@@ -24,15 +24,15 @@ var gProjs = [
         "publishedAt": 1448693940000,
         "labels": ["WEBooks", "shopping"]
     },
-    {
-        "id": "in-picture",
-        "name": "In Picture",
-        "title": "What do you see in the picture??",
-        "desc": "Nice and teaching game for kids and adults. You get a picture and need to say what do you see in it.",
-        "url": "projs/in-picture",
-        "publishedAt": 1448693940000,
-        "labels": ["PicsGame", "games and learning"]
-    },
+    // {
+    //     "id": "in-picture",
+    //     "name": "In Picture",
+    //     "title": "What do you see in the picture??",
+    //     "desc": "Nice and teaching game for kids and adults. You get a picture and need to say what do you see in it.",
+    //     "url": "projs/in-picture",
+    //     "publishedAt": 1448693940000,
+    //     "labels": ["PicsGame", "games and learning"]
+    // },
     {
         "id": "touch-nums",
         "name": "Touch Nums",
@@ -42,15 +42,15 @@ var gProjs = [
         "publishedAt": 1448693940000,
         "labels": ["PicsGame", "games and learning"]
     },
-    {
-        "id": "proj-flex",
-        "name": "CSS Layouts",
-        "title": "Nןce things with CSS",
-        "desc": "CSS 3 is now powerful than ever. You can make your site responsive  ans looks great to any consolue you use",
-        "url": "projs/proj-layout",
-        "publishedAt": 1448693940000,
-        "labels": ["CSS", "web design"]
-    },
+    // {
+    //     "id": "proj-flex",
+    //     "name": "CSS Layouts",
+    //     "title": "Nןce things with CSS",
+    //     "desc": "CSS 3 is now powerful than ever. You can make your site responsive  ans looks great to any consolue you use",
+    //     "url": "projs/proj-layout",
+    //     "publishedAt": 1448693940000,
+    //     "labels": ["CSS", "web design"]
+    // },
     {
         "id": "guess-me",
         "name": "Guess Me",
@@ -69,23 +69,23 @@ var gProjs = [
         "publishedAt": 1448693940000,
         "labels": ["Games Online", "games"]
     },
+    // {
+    //     "id": "balloon-pop",
+    //     "name": "Balloon Pop",
+    //     "title": "Nice animate with CSS - Click the balloons",
+    //     "desc": "CSS 3 is now powerful than ever. You can makemany animations to make your stie looks nuch better",
+    //     "url": "projs/proj-layout",
+    //     "publishedAt": 1448693940000,
+    //     "labels": ["CSS", "Web Design"]
+    // },
     {
-        "id": "balloon-pop",
-        "name": "Balloon Pop",
-        "title": "Nice animate with CSS - Click the balloons",
-        "desc": "CSS 3 is now powerful than ever. You can makemany animations to make your stie looks nuch better",
+        "id": "Meme-Generator",
+        "name": "Meme Generator",
+        "title": "Create your own meme",
+        "desc": "A simple and easy to use meme geneartor",
         "url": "projs/proj-layout",
         "publishedAt": 1448693940000,
-        "labels": ["CSS", "Web Design"]
-    },
-    {
-        "id": "safe-content",
-        "name": "Safe Content",
-        "title": "An example for a password using",
-        "desc": "Check the diffrence between an Admin and other users in the Web",
-        "url": "projs/proj-layout",
-        "publishedAt": 1448693940000,
-        "labels": ["WebSecurity", "security"]
+        "labels": ["Games", "Fun"]
     }
 
 ]

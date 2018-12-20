@@ -63,7 +63,7 @@ function renderItemsAndModals() {
                   Visit us!</a>
                   <p class="line-space"></p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: December 2018</li>
                   <li>Client: <span class="badge badge-secondary">  ${proj.labels[0]}</span></li>
                   <li>Category: <span class="badge badge-secondary">  ${proj.labels[1]}</span></li>
                 </ul>
