@@ -19,7 +19,7 @@ var gProjs = [
         "url": "projs/meme-generator/index.html",
         "publishedAt": 1448693940000,
         "labels": ["Games", "Fun"]
-    }
+    },
     {
         "id": "mine-sweeper",
         "name": "Mine Sweeper",
