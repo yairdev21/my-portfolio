@@ -56,7 +56,7 @@ function renderItemsAndModals() {
                 <!-- Project Details Go Here -->
                 <h2>${proj.name}</h2>
                 <p class="item-intro text-muted">${proj.title}</p>
-                <img  style="max-height:40vw" class="img-fluid d-block mx-auto" src="img/portfolio/${proj.id}-full.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.id}-full.jpg" alt="">
                 <p>${proj.desc}</p>
                 <p class="line-space"></p>
                 <a href="${proj.url}" class="btn btn-primary btn-lg"  target="_blank" role="button">
