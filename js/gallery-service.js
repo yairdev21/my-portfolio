@@ -13,10 +13,10 @@ var gProjs = [
     },
     {
         "id": "meme-generator",
-        "name": "meme menerator",
+        "name": "meme generator",
         "title": "Create your own meme",
         "desc": "A simple and easy to use meme geneartor",
-        "url": "projs/Meme-Generator/index.html",
+        "url": "projs/meme-generator/index.html",
         "publishedAt": 1448693940000,
         "labels": ["Games", "Fun"]
     }
