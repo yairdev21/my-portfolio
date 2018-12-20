@@ -12,6 +12,15 @@ var gProjs = [
         "labels": ["Games Online", "games"],
     },
     {
+        "id": "meme-generator",
+        "name": "meme menerator",
+        "title": "Create your own meme",
+        "desc": "A simple and easy to use meme geneartor",
+        "url": "projs/Meme-Generator/index.html",
+        "publishedAt": 1448693940000,
+        "labels": ["Games", "Fun"]
+    }
+    {
         "id": "mine-sweeper",
         "name": "Mine Sweeper",
         "title": "The great Mine Sweeper game!",
@@ -87,15 +96,7 @@ var gProjs = [
     //     "publishedAt": 1448693940000,
     //     "labels": ["CSS", "Web Design"]
     // },
-    {
-        "id": "Meme-Generator",
-        "name": "Meme Generator",
-        "title": "Create your own meme",
-        "desc": "A simple and easy to use meme geneartor",
-        "url": "projs/Meme-Generator/index.html",
-        "publishedAt": 1448693940000,
-        "labels": ["Games", "Fun"]
-    }
+   
 
 ]
 
