@@ -3,6 +3,15 @@
 
 var gProjs = [
     {
+        "id": "quix-site-creator",
+        "name": "Quix Site Creator",
+        "title": "Creat your own site simply and quickly",
+        "desc": `Vue based web single page application that let you create a great site in a few moments`,
+        "url": "https://quix-site-creator.herokuapp.com",
+        "publishedAt": 1448693940000,
+        "labels": ["Games Online", "games"],
+    },
+    {
         "id": "mine-sweeper",
         "name": "Mine Sweeper",
         "title": "The great Mine Sweeper game!",
@@ -11,7 +20,7 @@ var gProjs = [
           containing hidden "mines" or bombs without detonating any of them, 
           with help from clues about the number of neighboring mines in each field. 
             Wanna play the good and the old game? go ahead!`,
-        "url": "projs/mine-sweeper",
+        "url": "projs/mine-sweeper/index.html",
         "publishedAt": 1448693940000,
         "labels": ["Games Online", "games"],
     },
@@ -20,7 +29,7 @@ var gProjs = [
         "name": "Book Shop",
         "title": "Buy a book!",
         "desc": "New best books ever! We have all books you need! low prices anf fast shipping! BUY NOW!",
-        "url": "projs/book-shop",
+        "url": "projs/book-shop/index.html",
         "publishedAt": 1448693940000,
         "labels": ["WEBooks", "shopping"]
     },
@@ -38,7 +47,7 @@ var gProjs = [
         "name": "Touch Nums",
         "title": "How quick can you click?",
         "desc": "You need to click the numbers as fast as you can by the right order .Nice and teaching game for kids and adults.",
-        "url": "projs/touch-nums",
+        "url": "projs/touch-nums/index.html",
         "publishedAt": 1448693940000,
         "labels": ["PicsGame", "games and learning"]
     },
@@ -56,7 +65,7 @@ var gProjs = [
         "name": "Guess Me",
         "title": "Let's see if you are smarter than the conputer?",
         "desc": "A machine learning game. When the computer is wrong, it learns for the next round. Try it!",
-        "url": "projs/proj-layout",
+        "url": "projs/guess-me/index.html",
         "publishedAt": 1448693940000,
         "labels": ["Games Online", "games"]
     },
@@ -65,7 +74,7 @@ var gProjs = [
         "name": "Ball Board",
         "title": "Nice board game",
         "desc": "You need to cloccet all the balls. avoid from the glue!",
-        "url": "projs/proj-layout",
+        "url": "projs/ball-board/index.html",
         "publishedAt": 1448693940000,
         "labels": ["Games Online", "games"]
     },
@@ -83,7 +92,7 @@ var gProjs = [
         "name": "Meme Generator",
         "title": "Create your own meme",
         "desc": "A simple and easy to use meme geneartor",
-        "url": "projs/proj-layout",
+        "url": "projs/Meme-Generator/index.html",
         "publishedAt": 1448693940000,
         "labels": ["Games", "Fun"]
     }

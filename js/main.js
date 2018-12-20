@@ -59,7 +59,7 @@ function renderItemsAndModals() {
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.id}-full.jpg" alt="">
                 <p>${proj.desc}</p>
                 <p class="line-space"></p>
-                <a href="projs/${proj.id}/index.html" class="btn btn-primary btn-lg"  target="_blank" role="button">
+                <a href="${proj.url}" class="btn btn-primary btn-lg"  target="_blank" role="button">
                   Visit us!</a>
                   <p class="line-space"></p>
                 <ul class="list-inline">
