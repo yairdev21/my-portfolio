@@ -20,10 +20,9 @@ var gProjs = [
         "publishedAt": 1448693940000,
         "labels": ["Economy", "Money"],
     },
-
     {
         "id": "meme-generator",
-        "name": "meme generator",
+        "name": "Meme Generator",
         "title": "Create your own meme",
         "desc": "A simple and easy to use meme geneartor",
         "url": "projs/meme-generator/index.html",
