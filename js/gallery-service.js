@@ -11,6 +11,16 @@ var gProjs = [
         "publishedAt": 1448693940000,
         "labels": ["Games Online", "games"],
     },
+    {
+        "id": "bitcoin-app",
+        "name": "Bitcoin App",
+        "title": "Control your bitcoin simpley!",
+        "desc": `Manage your bitcoin and transfer money to your contacts`,
+        "url": "https://github.com/yairweiss1/bitcoin-app",
+        "publishedAt": 1448693940000,
+        "labels": ["Economy", "Money"],
+    },
+
     // {
     //     "id": "meme-generator",
     //     "name": "meme generator",
