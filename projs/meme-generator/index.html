@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meme Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+</head>
+
+<body onload="init()" onresize="onResize()" class="d-flex flex-column">
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Meme generator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nav-link" href="#" onclick="onAbout()">About</a>
+            
+            <div class="form-inline my-2 my-lg-0">
+                <input class="category-filter" list="keywords" value="" onclick="resetValue(this)" onchange="onChangeCategory()"
+                    placeholder="Choose category">
+                <datalist id="keywords">
+                    <option value="All">
+                    <option value="Animal">
+                    <option value="Crazy">
+                    <option value="Happy">
+                    <option value="Sarcastic">
+                    <option value="Sad">
+                </datalist>
+                <br>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="modal-about">
+            <div class="d-flex">
+                <h2>About</h2>
+                <button class="btn btn-dark" onclick="onAbout()">X</button>
+            </div>
+
+            <p>Yair Weiss</p>
+            <p>Noam Kleiner</p>
+            <p>10/2018</p>
+        </div>
+
+
+    <main>
+        <div class="category-container d-flex justify-content-around flex-wrap">
+            
+        </div>
+        <div class="imgs-container center d-flex flex-wrap "></div>
+        <!--IMGS -->
+        </div>
+    </main>
+
+    <!-- CANVAS MODAL -->
+    <div class="modal flex-column">
+        <!-- MODAL HEADER -->
+        <header class="modal-top-container ">
+            <button class="btn btn-back btn-md" onclick="onBackBtn()">
+                <i class="fas fa-2x fa-inverse fa-arrow-circle-left"></i> <span class="buttons-text">Go Back</span>
+            </button>
+        </header>
+
+        <!-- MODAL MID CONTAINER (CANVAS & CAPTIONS) -->
+        <div class="modal-mid-and-bot-container justify-content-center">
+
+            <div class="modal-mid-container d-flex flex-column">
+                <input type="text" class="caption" id="top-txt" oninput="onTxtChange(this.value)" onfocus="onTxtFocus()"
+                    placeholder="Add your text">
+                <canvas id="canvas" onclick="onCanvasClick(event)">Please upgrade your browser.</canvas>
+            </div>
+
+            <!-- MODAL BOT CONTAINER (CONTROL-BOX)  -->
+            <div class="control-box-grid-container">
+                <div class="control-box-item d-flex flex-column justify-content-center">
+
+                    <div class="btns-plus-minus-shadow d-flex justify-content-between">
+                        <div class="font-size-group-item d-flex">
+                            <span class="font-size-minus-group-btn">
+                                <button type="button" class="font-nimus-btn btn btn-light btn-number" ondblclick="onFontSizeClick(-10)"
+                                    onclick="onFontSizeClick(-1)">
+                                    <i class="fas fa-font fa-sm"></i>
+                                </button>
+                            </span>
+                            <span class="font-size-plus-group-btn">
+                                <button type="button" class="font-plus-btn btn btn-light btn-number" ondblclick="onFontSizeClick(10)"
+                                    onclick="onFontSizeClick(1)">
+                                    <i class="fas fa-font fa-lg"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="shadow-box">
+                            <button type="button" class="btn btn-light btn-number">
+                                <input type="checkbox" id="checkbox1" onchange="onShadowChange(this.checked)" style="visibility: hidden" />
+                                <label for="checkbox1"><span class="checkbox"></span> </label><span class="shadow-text">Shadow</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="arrow-btns-container d-flex justify-content-around">
+                        <button class="btn btn-md btn-arrow" ondblclick="onXChange(-30)" onclick="onXChange(-5)"><i
+                                class="fas fa-arrow-left"></i></button>
+                        <button class="btn btn-md btn-arrow" ondblclick="onXChange(30)" onclick="onXChange(5)"><i class="fas fa-arrow-right"></i></button>
+                        <button class="btn btn-md btn-arrow" ondblclick="onYChange(-30)" onclick="onYChange(-5)"><i
+                                class="fas fa-arrow-up"></i></button>
+                        <button class="btn btn-md btn-arrow" ondblclick="onYChange(30)" onclick="onYChange(5)"><i class="fas fa-arrow-down"></i></button>
+                        <button class="btn btn-md btn-add-row" onclick="onAddNewLine('center')">--</button>
+                        <button class="btn btn-md btn-add-bot-row" onclick="onAddNewLine('bottom')">__</button>
+                        <button class="btn btn-md btn-remove-row" onclick="onRemoveLine()"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="color-container-item">
+                    <div class="color-fill-or-stroke-buttons d-flex justify-content-center">
+                        <span>
+                            <button type="button" class="btn btn-light" onclick="onFillOrStrokeChange('stroke')">
+                                <i class="fas fa-pencil-alt"></i>
+                            </button>
+                        </span>
+                        <span>
+                            <button type="button" class="btn btn-light" onclick="onFillOrStrokeChange('fill')">
+                                <i class="fas fa-fill"></i>
+                            </button>
+                        </span>
+                        <span><input class="color-picker" type="color" name="favcolor" value="#ff0000" onchange="onColorChange(this.value)"></span>
+
+                    </div>
+                    <div class="colors-btns d-flex justify-content-center">
+                        <button class="btn btn-primary" value="#0069d9" onclick="onColorChange(this.value)"></button>
+                        <button class="btn btn-secondary" value="#6c757d" onclick="onColorChange(this.value)"></button>
+                        <button class="btn btn-success" value="#28a745" onclick="onColorChange(this.value)"></button>
+                        <button class="btn btn-danger" value="#dc3545" onclick="onColorChange(this.value)"></button>
+                        <button class="btn btn-warning" value="#ffc107" onclick="onColorChange(this.value)"></button>
+                        <button class="btn btn-info" value="#17a2b8" onclick="onColorChange(this.value)"></button>
+                        <button class="btn btn-light" value="#f8f9fa" onclick="onColorChange(this.value)"></button>
+                        <button class="btn btn-dark" value="#343a40" onclick="onColorChange(this.value)"></button>
+                    </div>
+                </div>
+
+                <div class="save-and-share-buttons-item d-flex">
+                    <a class="btn btn-download btn-md" onclick="onDownload(this)">
+                        <i class="fas fa-2x fa-inverse fa-download"></i>
+                        <span class="buttons-text">Download</span>
+                    </a>
+                    <!-- Todo
+                    <button class="btn btn-md">
+                        <i class="fab fa-2x fa-inverse fa-facebook-square"></i>
+                        <span class="buttons-text">Share</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="lib/jquery/jquery.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/service.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

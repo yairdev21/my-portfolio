@@ -21,15 +21,15 @@ var gProjs = [
         "labels": ["Economy", "Money"],
     },
 
-    // {
-    //     "id": "meme-generator",
-    //     "name": "meme generator",
-    //     "title": "Create your own meme",
-    //     "desc": "A simple and easy to use meme geneartor",
-    //     "url": "projs/meme-generator/index.html",
-    //     "publishedAt": 1448693940000,
-    //     "labels": ["Games", "Fun"]
-    // },
+    {
+        "id": "meme-generator",
+        "name": "meme generator",
+        "title": "Create your own meme",
+        "desc": "A simple and easy to use meme geneartor",
+        "url": "projs/meme-generator/index.html",
+        "publishedAt": 1448693940000,
+        "labels": ["Games", "Fun"]
+    },
     {
         "id": "mine-sweeper",
         "name": "Mine Sweeper",
