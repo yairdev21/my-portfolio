@@ -1,4 +1,4 @@
-'use stirct'
+'use strict'
 
 console.log('Starting up');
 
@@ -39,7 +39,7 @@ function renderItemsAndModals() {
 
   function renderModals() {
     var projs = getProjs();
-    strHtmls = projs.map(function (proj, i) {
+    var strHtmls = projs.map(function (proj, i) {
       var strHtml = `
 <div class="portfolio-modal modal fade" id="portfolioModal${i + 1}" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog">

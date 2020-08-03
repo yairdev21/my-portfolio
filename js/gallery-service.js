@@ -16,7 +16,7 @@ var gProjs = [
         "name": "Bitcoin App",
         "title": "Control your bitcoin simpley!",
         "desc": `Manage your bitcoin and transfer money to your contacts`,
-        "url": "https://yairweiss1.github.io/bitcoin-app/",
+        "url": "https://yairdev21.github.io/bitcoin-app-react/",
         "publishedAt": 1448693940000,
         "labels": ["Economy", "Money"],
     },
